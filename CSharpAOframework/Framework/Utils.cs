@@ -13,9 +13,9 @@ namespace CSharpAOframework.Framework
             var screenshotName = "screenshots\\"
                                     + testName
                                     + DateTime.Now.ToString().Replace(".", "-").Replace(" ", "-").Replace(":", "-")
-                                    + ".jpeg";
+                                    + ".png";
 
-            screenshot.SaveAsFile(screenshotName, ScreenshotImageFormat.Jpeg);
+            screenshot.SaveAsFile(screenshotName, ScreenshotImageFormat.Png);
         }
     }
 }
