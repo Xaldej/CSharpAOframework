@@ -8,8 +8,7 @@ namespace CSharpAOframework.Pages
     {
         protected override string Url => "https://docs.microsoft.com/en-us/dotnet/csharp/";
 
-        private IWebElement SearchInput => _searchInput ??= _driver.FindElement(By.XPath("//*[@class='nav-bar-search']//input[@name='terms']"));
-        private IWebElement _searchInput;
+        private IWebElement SearchInput => _driver.FindElement(By.XPath("//*[@class='nav-bar-search']//input[@name='terms']"));
 
 
         public CSharpPage(IWebDriver driver) : base(driver) { }

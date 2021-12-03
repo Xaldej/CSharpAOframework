@@ -6,8 +6,7 @@ namespace CSharpAOframework.Pages
     {
         protected override string Url => "https://google.com";
 
-        private IWebElement SearchInput => _searchInput ??= _driver.FindElement(By.Name("q"));
-        private IWebElement _searchInput;
+        private IWebElement SearchInput => _driver.FindElement(By.Name("q"));
 
 
         public GooglePage(IWebDriver driver) : base(driver) { }
